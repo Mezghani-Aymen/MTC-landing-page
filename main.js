@@ -20,7 +20,7 @@ $(document).ready(function () {
         items: 1,
         loop: true,
         margin: 20,
-        nav: true,
+        nav: false,
         autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
@@ -36,4 +36,18 @@ $(document).ready(function () {
             }
         }
     });
+});
+
+const scrollToTopButton = document.getElementById("scrollToTop");
+
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopButton.style.display = "flex";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+};
+
+scrollToTopButton.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });

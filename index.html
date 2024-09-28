@@ -17,10 +17,11 @@
 </head>
 
 <body class="bg-black">
-    <header class="w-screen px-6 py-3 fixed top-0 z-20">
-        <div class="flex justify-between items-center sm:px-3 py-3 px-1">
-            <div class="w-32 sm:w-40 md:w-44 sm:h-22 flex justify-center items-center   " href="/">
-                <img src="MTC_ISIMS_logo_2.png" alt="Logo_MTC" class="object-cover">
+    <header class="w-screen px-6 py-3 fixed top-0 z-20 ">
+        <div
+            class="flex justify-between items-center sm:px-3 py-3 px-1 backdrop-blur-md bg-white bg-opacity-30 rounded-lg shadow-lg">
+            <div class="w-32 sm:w-40 md:w-44 sm:h-22 flex justify-center items-center " href="/">
+                <img src="images/MTC_ISIMS_logo_2.png" alt="Logo_MTC" class="object-cover">
             </div>
             <nav class="hidden sm:flex space-x-4 text-xl text-white">
                 <ul class="flex space-x-4">
@@ -31,7 +32,10 @@
                         <a href="#team">Comitee</a>
                     </li>
                     <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
-                        <a href="#services">Services</a>
+                        <a href="#blog">Events</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="#activities">Activities</a>
                     </li>
                     <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
                         <a href="#contact" className=" me-5">Contact</a>
@@ -56,10 +60,10 @@
             class="absolute right-0 w-screen top-0 bg-white bg-opacity-10 backdrop-blur-lg rounded shadow-lg hidden">
             <ul class="menu-transition h-screen overflow-hidden flex justify-center items-center flex-col"
                 id="menu-list">
-                <li class="block px-4 py-2 text-white" data-target="home">Home</li>
                 <li class="block px-4 py-2 text-white" data-target="about">About</li>
                 <li class="block px-4 py-2 text-white" data-target="team">Team</li>
-                <li class="block px-4 py-2 text-white" data-target="services">Services</li>
+                <li class="block px-4 py-2 text-white" data-target="blog">Events</li>
+                <li class="block px-4 py-2 text-white" data-target="activites">Activities</li>
                 <li class="block px-4 py-2 text-white" data-target="contact">Contact</li>
             </ul>
         </div>
@@ -83,11 +87,11 @@
         </section>
 
         <section class="bg-black text-white py-7 px-6" id="about">
-            <h1 class="text-3xl md:text-5xl font-bold mb-10 text-center text-primary">Who Us ?</h1>
+            <h1 class="text-3xl md:text-5xl font-bold mb-10 text-center text-primary">Who are we ?</h1>
             <div class="container mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div class="lg:w-1/2  ">
-                        <img src="team.jpg" alt="Team MTC" class="w-full h-auto rounded-lg shadow-lg">
+                        <img src="images/team.jpg" alt="Team MTC" class="w-full h-auto rounded-lg shadow-lg">
                     </div>
                     <div class="lg:w-1/2   px-4 py-2">
                         <p class="text-l lg:text-2xl">
@@ -104,11 +108,11 @@
         </section>
 
         <section class="py-6 px-5 text-white" id="team">
-            <h1 class="text-5xl text-center text-primary mb-10">Our Comitee</h1>
+            <h1 class="text-3xl md:text-5xl font-bold   text-center text-primary mb-10">Our Comitee</h1>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full">
-                        <img src="team1.jpg" alt="Team 1" class="w-full h-48 object-cover" />
+                        <img src="images/comitee/" alt="Team 1" class="w-full h-48 object-cover" />
                         <div class="absolute inset-0 bg-black opacity-50"></div>
                         <div class="relative p-4 text-center">
                             <h2 class="text-xl font-bold text-white mb-2">Explore the Hidden Beauty</h2>
@@ -116,63 +120,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full">
-                        <img src="team2.jpg" alt="Team 2" class="w-full h-48 object-cover" />
-                        <div class="absolute inset-0 bg-black opacity-50"></div>
-                        <div class="relative p-4 text-center">
-                            <h2 class="text-xl font-bold text-white mb-2">Explore the Hidden Beauty</h2>
-                            <p class="text-gray-300">Vice President</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full">
-                        <img src="team3.jpg" alt="Team 3" class="w-full h-48 object-cover" />
-                        <div class="absolute inset-0 bg-black opacity-50"></div>
-                        <div class="relative p-4 text-center">
-                            <h2 class="text-xl font-bold text-white mb-2">Explore the Hidden Beauty</h2>
-                            <p class="text-gray-300">Developer</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
 
         <section class="py-6 px-5 text-white" id="blog">
-            <h1 class="text-5xl text-center text-primary mb-10">Events</h1>
+            <h1 class="text-3xl md:text-5xl font-bold text-center text-primary mb-10">Events</h1>
             <div class="owl-carousel owl-theme mb-4">
                 <div class="item">
                     <div class="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full">
-                        <img src="team.jpg" alt="Team 1" class="w-full h-48 object-cover" />
+                        <img src="images/blogs/blog_1.jpg" alt="Team 1" class="w-full h-48 object-cover" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full">
-                        <img src="team2.jpg" alt="Team 2" class="w-full h-48 object-cover" />
+                        <img src="images/blogs/blog_2.jpg" alt="Team 2" class="w-full h-48 object-cover" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full">
-                        <img src="team.jpg" alt="Team 3" class="w-full h-48 object-cover" />
+                        <img src="images/blogs/blog_3.jpg" alt="Team 3" class="w-full h-48 object-cover" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full">
+                        <img src="images/blogs/blog_5.jpg" alt="Team 3" class="w-full h-48 object-cover" />
                     </div>
                 </div>
             </div>
             <div class="flex justify-end">
-                <a href="/blog" class="text-black font-bold py-2 px-4 rounded text-left bg-primary">
+                <a href="blog.html"
+                    class="text-white font-bold py-2 px-4 rounded text-left hover:bg-[#9B7EDA] bg-purple-600">
                     See more
                 </a>
             </div>
         </section>
 
         <section class="py-8 px-10" id="activities">
-            <h2 class="text-center text-5xl font-bold mb-6 text-primary">Latest Activities</h2>
+            <h2 class="text-3xl md:text-5xl font-bold mb-10 text-center text-primary">Latest Activities</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-5">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="your-image-url.jpg" alt="Python Activity">
+                <div class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/activites/codeSell.jpg" alt="Python Activity">
                     <div class="p-4 flex justify-between items-center">
-                        <h3 class="text-xl font-semibold">Python</h3>
-                        <a href="https://example.com"
+                        <h3 class="text-xl font-semibold text-white">Code$ell</h3>
+                        <a href=""
                             class="flex items-center justify-center bg-purple-600 text-white font-bold w-10 h-10 rounded-full hover:bg-purple-700 transition duration-300 ">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -183,11 +174,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="your-image-url.jpg" alt="Python Activity">
+                <div class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/activites/content_creation.jpg"
+                        alt="Python Activity">
                     <div class="p-4 flex justify-between items-center">
-                        <h3 class="text-xl font-semibold">Python</h3>
-                        <a href="https://example.com"
+                        <h3 class="text-xl font-semibold text-white">Content creation</h3>
+                        <a href=""
                             class="flex items-center justify-center bg-purple-600 text-white font-bold w-10 h-10 rounded-full hover:bg-purple-700 transition duration-300 ">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -198,10 +190,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="your-image-url.jpg" alt="Python Activity">
+                <div class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/activites/html_training.png"
+                        alt="Python Activity">
                     <div class="p-4 flex justify-between items-center">
-                        <h3 class="text-xl font-semibold">Python</h3>
+                        <h3 class="text-xl font-semibold text-white">Html Training</h3>
                         <a href="https://example.com"
                             class="flex items-center justify-center bg-purple-600 text-white font-bold w-10 h-10 rounded-full hover:bg-purple-700 transition duration-300 ">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -215,14 +208,15 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <a href="/activites" class="text-black font-bold py-2 px-4 rounded text-left bg-primary">
+                <a href="activites.html"
+                    class="text-white font-bold py-2 px-4 rounded text-left bg-purple-600 hover:bg-[#9B7EDA]">
                     See more
                 </a>
             </div>
         </section>
 
         <section class="p-8" id="contact">
-            <h2 class="text-center text-primary text-5xl font-bold mb-6">Contact Us</h2>
+            <h2 class="text-3xl md:text-5xl font-bold mb-10 text-center text-primary">Contact Us</h2>
             <div class="flex flex-col md:flex-row container mx-auto">
                 <!-- Contact Form -->
                 <div class="md:w-6/12 p-4">
@@ -259,9 +253,10 @@
                 <!-- Map -->
                 <div class="md:w-6/12 h-auto p-4">
                     <div class="rounded-lg shadow-lg w-full h-full ">
-                        <iframe class="w-full h-full"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345090425!2d144.95373531531816!3d-37.81627997975125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11b3a1%3A0x5045675218ceed30!2sMelbourne%20CBD%2C%20Victoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1617886182866!5m2!1sen!2sus"
-                            allowfullscreen="" loading="lazy"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.6762211591063!2d10.754659075055079!3d34.83923237287071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d19db21e2b53%3A0x771c533873752407!2sHigher%20Institute%20of%20Computer%20Science%20and%20Multimedia%20of%20Sfax!5e0!3m2!1sen!2stn!4v1727552022312!5m2!1sen!2stn"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -273,21 +268,21 @@
 
             <!-- Logo Section -->
             <div class="mb-6 md:mb-0">
-                <img src="MTC_ISIMS_logo_2.png" alt="Logo" class="h-12">
+                <img src="images/MTC_ISIMS_logo_2.png" alt="Logo" class="h-12">
             </div>
 
             <!-- Center Links -->
             <div class="text-center mb-6 md:mb-0">
                 <div class="flex flex-col md:flex-row justify-center items-center md:space-x-8 text-xl gap-3">
                     <ul class="space-y-2 md:space-y-0 md:w-1/2">
-                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Home</a></li>
-                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">About</a></li>
-                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Services</a></li>
+                        <li><a href="#hero" class="hover:text-[#9B7EDA] text-white">Home</a></li>
+                        <li><a href="#about" class="hover:text-[#9B7EDA] text-white">About</a></li>
+                        <li><a href="#team" class="hover:text-[#9B7EDA] text-white">Comitee</a></li>
                     </ul>
                     <ul class="space-y-2 md:space-y-0 md:w-1/2">
-                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Contact</a></li>
-                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Blog</a></li>
-                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Activities</a></li>
+                        <li><a href="#blog" class="hover:text-[#9B7EDA] text-white">Blog</a></li>
+                        <li><a href="#activities" class="hover:text-[#9B7EDA] text-white">Activities</a></li>
+                        <li><a href="#contact" class="hover:text-[#9B7EDA] text-white">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -309,10 +304,14 @@
 
         <!-- Footer Bottom Section -->
         <div class="w-full border-t mt-4 p-3">
-            <p class="text-center text-white text-opacity-60">&copy; 2024 MTC_Isims. All rights reserved.</p>
+            <p class="text-center text-white text-opacity-60">&copy; 2023-2024 MTC Isims. All rights reserved.</p>
         </div>
     </footer>
-
+    <button id="scrollToTop"
+        class="fixed z-30 bottom-4 right-4 hidden sm:flex items-center justify-center w-12 h-12 bg-purple-600 text-white rounded-full shadow-lg transition-opacity duration-300 opacity-75 hover:opacity-100"
+        title="Scroll to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     <script src="./main.js"></script>
 </body>
 
