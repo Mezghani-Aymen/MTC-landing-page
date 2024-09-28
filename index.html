@@ -8,8 +8,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-
+<body class="bg-black">
+    <header class="w-screen p-6 fixed top-0 z-20 ">
+        <div class="flex justify-between items-center sm:px-3 py-3 px-1">
+            <div class="w-32 sm:w-40 md:w-44 sm:h-22 flex justify-center items-center   " href="/">
+                <img src="MTC_ISIMS_logo_2.png" alt="Logo_MTC" class="object-cover">
+            </div>
+            <nav class="hidden sm:flex space-x-4 text-xl text-white">
+                <ul class="flex space-x-4">
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="#about">About</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="#team">Comitee</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="#contact" className=" me-5">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 
 </html>
