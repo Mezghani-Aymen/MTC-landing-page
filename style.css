@@ -1,0 +1,36 @@
+:root {
+    --color-primary: #9B7EDA;
+    --text-primary: #9B7EDA;
+    --text-secondary: ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+@keyframes animate-Title {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: var(--color-primary);
+    }
+}
+
+#mtc_Title {
+    -webkit-text-stroke: 2px var(--color-primary);
+    animation: animate-Title 2s infinite alternate;
+
+}
+
+#mtc_Title:hover {
+    color: var(--text-primary);
+    animation: none
+}
