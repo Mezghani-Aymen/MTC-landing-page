@@ -30,8 +30,34 @@
                     </li>
                 </ul>
             </nav>
+            <!-- humberguer btn -->
+            <div class="relative  block sm:hidden">
+                <button id="menu-button"
+                    class="flex items-center justify-center h-9 w-9 text-white rounded focus:outline-none">
+                    <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu navigation mobile version  -->
+        <div id="menu"
+            class="absolute right-0 w-screen top-0 bg-white bg-opacity-10 backdrop-blur-lg rounded shadow-lg hidden">
+            <ul class="menu-transition h-screen overflow-hidden flex justify-center items-center flex-col"
+                id="menu-list">
+                <li class="block px-4 py-2 text-white" data-target="home">Home</li>
+                <li class="block px-4 py-2 text-white" data-target="about">About</li>
+                <li class="block px-4 py-2 text-white" data-target="team">Team</li>
+                <li class="block px-4 py-2 text-white" data-target="services">Services</li>
+                <li class="block px-4 py-2 text-white" data-target="contact">Contact</li>
+            </ul>
         </div>
     </header>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
