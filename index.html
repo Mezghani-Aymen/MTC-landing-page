@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Tech club</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-black">
-    <header class="w-screen p-6 fixed top-0 z-20 ">
+    <header class="w-screen px-6 py-3 fixed top-0 z-20">
         <div class="flex justify-between items-center sm:px-3 py-3 px-1">
             <div class="w-32 sm:w-40 md:w-44 sm:h-22 flex justify-center items-center   " href="/">
                 <img src="MTC_ISIMS_logo_2.png" alt="Logo_MTC" class="object-cover">
@@ -57,6 +58,24 @@
         </div>
     </header>
 
+    <main class="overflow-x-hidden">
+        <section id="hero">
+            <div class="h-screen w-screen flex justify-center items-center relative">
+                <video autoplay muted loop playsinline class="object-cover object-center w-full h-full video-blur">
+                    <source src="video_MTC.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 flex justify-center items-center  text-center  px-6 ">
+                    <h1 class="
+                    text-6xl 
+                    lg:text-8xl 
+                    transition-all 
+                    duration-500" id="mtc_Title">
+                        Microsoft Tech Club</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <script src="./main.js"></script>
 </body>
 
