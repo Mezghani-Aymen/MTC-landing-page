@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Tech club</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body class="bg-black">
+    <header class="w-screen px-6 py-3 fixed top-0 z-20">
+        <div class="flex justify-between items-center sm:px-3 py-3 px-1">
+            <div class="w-32 sm:w-40 md:w-44 sm:h-22 flex justify-center items-center " href="/">
+                <img src="MTC_ISIMS_logo_2.png" alt="Logo_MTC" class="object-cover">
+            </div>
+            <nav class="hidden sm:flex space-x-4 text-xl text-white">
+                <ul class="flex space-x-4">
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="index.html#team">Comitee</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="index.html#blog">Events</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="index.html#activities">Activities</a>
+                    </li>
+                    <li class='cursor-pointer text-white hover:text-[#9B7EDA]'>
+                        <a href="index.html#contact" className=" me-5">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- humberguer btn -->
+            <div class="relative  block sm:hidden">
+                <button id="menu-button"
+                    class="flex items-center justify-center h-9 w-9 text-white rounded focus:outline-none">
+                    <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu navigation mobile version  -->
+        <div id="menu"
+            class="absolute right-0 w-screen top-0 bg-white bg-opacity-10 backdrop-blur-lg rounded shadow-lg hidden">
+            <ul class="menu-transition h-screen overflow-hidden flex justify-center items-center flex-col"
+                id="menu-list">
+                <li class="block px-4 py-2 text-white"><a href="index.html#hero">Home</a></li>
+                <li class="block px-4 py-2 text-white"><a href="index.html#about">About</a></li>
+                <li class="block px-4 py-2 text-white"><a href="index.html#team">Team</a></li>
+                <li class="block px-4 py-2 text-white"><a href="index.html#blog">Events</a></li>
+                <li class="block px-4 py-2 text-white"><a href="index.html#activites">Activities</a>
+                </li>
+                <li class="block px-4 py-2 text-white"><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="mt-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ">
+            <div
+                class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div class="event-image">
+                    <img src="images/blogs/blog_1.jpg" alt="University Fair: Univexpo" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <p class="text-gray-200 text-sm">23 Jul, 2024</p>
+                    <h3 class="text-lg font-semibold text-primary">University Fair: Univexpo</h3>
+                </div>
+            </div>
+
+            <div
+                class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div class="event-image">
+                    <img src="images/blogs/blog_2.jpg" alt="Python Training" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <p class="text-gray-200 text-sm">27 Apr, 2024</p>
+                    <h3 class="text-lg font-semibold text-primary">Python Training</h3>
+                </div>
+            </div>
+            <div
+                class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div class="event-image">
+                    <img src="images/blogs/blog_3.jpg" alt="Python Training" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <p class="text-gray-200 text-sm">27 Apr, 2024</p>
+                    <h3 class="text-lg font-semibold text-primary">Python Training</h3>
+                </div>
+            </div>
+            <div
+                class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div class="event-image">
+                    <img src="images/blogs/blog_4.jpg" alt="Python Training" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <p class="text-gray-200 text-sm">27 Apr, 2024</p>
+                    <h3 class="text-lg font-semibold text-primary">Python Training</h3>
+                </div>
+            </div>
+            <div
+                class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div class="event-image">
+                    <img src="images/blogs/blog_5.jpg" alt="Python Training" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <p class="text-gray-200 text-sm">27 Apr, 2024</p>
+                    <h3 class="text-lg font-semibold text-primary">Python Training</h3>
+                </div>
+            </div>
+            <div
+                class="border border-[#9B7EDA] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div class="event-image">
+                    <img src="images/blogs/blog_6.jpg" alt="Python Training" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <p class="text-gray-200 text-sm">27 Apr, 2024</p>
+                    <h3 class="text-lg font-semibold text-primary">Python Training</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white p-8 bg-black">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+
+            <!-- Logo Section -->
+            <div class="mb-6 md:mb-0">
+                <img src="MTC_ISIMS_logo_2.png" alt="Logo" class="h-12">
+            </div>
+
+            <!-- Center Links -->
+            <div class="text-center mb-6 md:mb-0">
+                <div class="flex flex-col md:flex-row justify-center items-center md:space-x-8 text-xl gap-3">
+                    <ul class="space-y-2 md:space-y-0 md:w-1/2">
+                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">About</a></li>
+                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Services</a></li>
+                    </ul>
+                    <ul class="space-y-2 md:space-y-0 md:w-1/2">
+                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#9B7EDA] text-white">Activities</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="text-center mb-6 md:mb-0">
+                <a href="https://www.facebook.com/microsoft.tech.club.isims" class="hover:text-[#9B7EDA] mx-2 text-2xl">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mtc.isims" class="hover:text-[#9B7EDA] mx-2 text-2xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/microsoft-tech-club-isims/"
+                    class="hover:text-[#9B7EDA] mx-2 text-2xl">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="w-full border-t mt-4 p-3">
+            <p class="text-center text-white text-opacity-60">&copy; 2024 MTC_Isims. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop"
+        class="fixed z-30 bottom-4 right-4 hidden sm:flex items-center justify-center w-12 h-12 bg-purple-600 text-white rounded-full shadow-lg transition-opacity duration-300 opacity-75 hover:opacity-100"
+        title="Scroll to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
